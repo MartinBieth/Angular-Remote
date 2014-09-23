@@ -70,6 +70,9 @@ module.exports = {
     ],
     css: [
     ],
+    fonts: [
+      'vendor/bootstrap/fonts/glyphicons-halflings-regular.woff'
+    ],
     assets: [
     ]
   },
