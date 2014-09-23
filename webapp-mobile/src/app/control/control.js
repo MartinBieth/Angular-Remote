@@ -13,7 +13,8 @@
  * specified, as shown below.
  */
 angular.module( 'webappMobileApp.control', [
-  'ui.router'
+  'touchManager',
+  'remoteControlHubiManager'
 ])
 
 /**
