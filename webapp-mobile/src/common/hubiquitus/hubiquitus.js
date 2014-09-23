@@ -1,8 +1,6 @@
-'use strict';
+angular.module('hubiquitusManager', [])
 
-var hubiquitusManager = angular.module('hubiquitusManager', []);
-
-hubiquitusManager.factory('hubiquitusManager', ['$rootScope', '$window', function ($rootScope, $window) {
+.factory('hubiquitusManager', ['$rootScope', '$window', function ($rootScope, $window) {
     var Hubiquitus = $window.hubiquitus.Hubiquitus;
     var logger;
 

@@ -38,6 +38,7 @@ angular.module( 'webappMobileApp.home', [
  * And of course we define a controller for our route.
  */
 .controller( 'HomeCtrl', function HomeController( $scope, $location) {
+
   $scope.gotToControl = function () {
     $location.path('/control');
   };

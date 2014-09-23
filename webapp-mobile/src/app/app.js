@@ -4,7 +4,8 @@ angular.module( 'webappMobileApp', [
   'webappMobileApp.home',
   'webappMobileApp.control',
   'ui.router',
-  'hubiquitusManager'
+  'hubiquitusManager',
+  'touchManager'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {

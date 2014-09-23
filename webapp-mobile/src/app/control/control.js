@@ -37,7 +37,14 @@ angular.module( 'webappMobileApp.control', [
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'ControlCtrl', function ControlController( $scope) {
+.controller( 'ControlCtrl', function ControlController( $scope, $timeout, touchManager) {
+  $timeout(function() {
+    touchManager.init();
+  });
+
+  $scope.$on('mtl:touchmove', function(scopeEvent, ev) {
+    console.log('>>> touchmove', ev);
+  });
 })
 
 ;
